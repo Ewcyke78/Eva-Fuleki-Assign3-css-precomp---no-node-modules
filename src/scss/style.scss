@@ -42,13 +42,8 @@ a:hover {
     color: $link-hover-color;
 }
 
-  
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+  // Mixin heading styles
+@mixin heading-styles {
     margin-top: 25px;
     margin-bottom: 20px;
     font-family: "Josefin Sans", sans-serif;
@@ -57,24 +52,37 @@ h6 {
     word-wrap: break-word;
     color: #111111;
 }
+
 h1 {
+    @include heading-styles;
     font-size: 37px;
 }
+
 h2 {
+    @include heading-styles;
     font-size: 31px;
 }
+
 h3 {
+    @include heading-styles;
     font-size: 26px;
 }
+
 h4 {
+    @include heading-styles;
     font-size: 21px;
 }
+
 h5 {
+    @include heading-styles;
     font-size: 18px;
 }
+
 h6 {
+    @include heading-styles;
     font-size: 15px;
 }
+
 
 // I DON'T KNOW WHY THIS MIXIN DOESN'T WORK. The code looks okay for me.
 // @mixin container-styles($width, $margin) {
